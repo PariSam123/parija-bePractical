@@ -1,0 +1,101 @@
+/* Common Properties */
+.text-teal{ color: teal;}
+.bg-teal{ background-color: teal;}
+.display-3::after{
+  content: "";
+  background: teal;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: calc(50%-25px);
+  width: 50px;
+  height: 4px;
+}
+
+/* Menu */
+.navbar{
+  background-color: rgb(151, 148, 148);
+}
+.navbar .navbar-nav .nav-item .nav-link .navbar .navbar-brand{
+  color: black;
+  font-weight: 700;
+}
+.navbar-nav > .nav-item > .nav-link:hover , .navbar .navbar-brand:hover{
+  color: teal;
+  border: 2px solid teal;
+  transition: border 0.5s ease-in-out;
+}
+/* Home */
+#homeSection{
+  background: url('./images/pic2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+/* About */
+#aboutSection{
+  height: 100vh;
+}
+
+/* Profile */
+#profile{
+  height: 100vh;
+}
+#profile .profile-title{
+  color: #222222;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+#profile .profile-item{
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid teal;
+  position: relative;
+}
+#profile .profile-item h4{
+  color: teal;
+  font-size: 16px;
+  padding: 5px 15px;
+  background: #effbf9;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#profile .profile-item::before{
+  content: "";
+  position: absolute;
+  border: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: -9px;
+  top: 0px;
+  background: #fff;
+}
+
+/* contact */
+#contact .card{
+  border: none;
+}
+#contact .contact-item i{
+  font-size: 1.8rem;
+}
+#contact .contact-label h4{
+  color: teal;
+}
+#contact .contact-label p{
+  color: #555;
+}
+/* pnf  */
+#pnf{
+  background: url('./images/dog.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+#footer{
+  background: transparent;
+}
